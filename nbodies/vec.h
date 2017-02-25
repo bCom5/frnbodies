@@ -37,10 +37,10 @@ inline float length (const tvec2<T>& v) {
 
 template<typename T>
 inline tvec2<T> to_polar(const tvec2<T>& v) {
-	return length(v);
+	return tvec2<T>(length(v), tanl(v.y / v.x);
 }
 
 template<typename T>
 inline float from_polar(const tvec2<T>& v) {
-	return tvec2<T>(x * cos(y), x * sin(y));
+	return tvec2<T>(x * cos(v.y), x * sin(v.y));
 }
