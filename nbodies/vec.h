@@ -32,12 +32,12 @@ inline tvec2<T> operator* (const T& b, const tvec2<T>& a) {
 
 template<typename T>
 inline float length (const tvec2<T>& v) {
-	return sqrt(pow(v.x, 2) + pow(v.y, 2));
+	return sqrt(v.x * v.x + v.y * v.y);
 }
 
 template<typename T>
 inline tvec2<T> to_polar(const tvec2<T>& v) {
-	return tvec2<T>(length(v), tanl(v.y / v.x);
+	return tvec2<T>(length(v), atan(v.y / v.x);
 }
 
 template<typename T>
