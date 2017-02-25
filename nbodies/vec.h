@@ -35,24 +35,12 @@ inline float length (const tvec2<T>& v) {
 	return sqrt(pow(v.x, 2) + pow(v.y, 2));
 }
 
-// change
 template<typename T>
 inline tvec2<T> to_polar(const tvec2<T>& v) {
 	return length(v);
 }
 
-// change
 template<typename T>
 inline float from_polar(const tvec2<T>& v) {
 	return tvec2<T>(x * cos(y), x * sin(y));
 }
-
-/*
-public Polar toPolar() {
-	return new Polar(Math.sqrt(Math.pow(x, 2) + Math.pow(y, 2)), Math.toDegrees(Math.atan(y / x)));
-}
-
-public Cartesian toCartesian() {
-	return new Cartesian(r * Math.cos(Math.toRadians(theta)), r * Math.sin(Math.toRadians(theta)));
-}
-}*/
